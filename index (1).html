@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amanda Stevens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #1c2230;
+    --muted: #5d6576;
+    --rule: #d5d9e0;
+    --accent: #1f3a5f;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-size: 1.125rem;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  header {
+    padding: 5rem 0 3.5rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(3.5rem, 11vw, 7.5rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+  }
+
+  header p {
+    margin: 1.25rem 0 0;
+    font-size: 1.25rem;
+    color: var(--muted);
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  section:last-of-type {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .content { max-width: 40rem; }
+  .content > *:first-child { margin-top: 0; }
+  .content > *:last-child { margin-bottom: 0; }
+
+  p { margin: 0 0 1rem; }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0 0 1.1rem 1.25rem;
+    border-left: 1px solid var(--rule);
+    margin-bottom: 1.1rem;
+  }
+
+  li:last-child { margin-bottom: 0; padding-bottom: 0; }
+
+  li strong {
+    display: block;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  footer {
+    padding-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 40rem) {
+    header { padding: 3rem 0 2.5rem; }
+    section { grid-template-columns: 1fr; gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Amanda Stevens</h1>
+      <p>Design student at Stanford University</p>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About me</h2>
+        <div class="content">
+          <p>I am a sophomore studying design at Stanford University. I recently moved from Colorado to San Luis Obispo, California, about three hours from campus.</p>
+          <p>After a summer internship where AI knowledge was in high demand, I wanted to learn more about it. I believe POLISCI 158 will be a good place to do that.</p>
+          </div>
+      </section>
+
+      <section id="research">
+        <h2>Research interests</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <strong>How AI and human designers should interact</strong>
+              What the working relationship between designers and AI tools should look like, and who stays in charge of the creative decisions.
+            </li>
+            <li>
+              <strong>Telling real from AI-generated</strong>
+              Whether people can truly distinguish AI-generated content from what is real.
+            </li>
+            <li>
+              <strong>AI and human creativity</strong>
+              Whether AI limits human creative capabilities or increases them.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Project ideas for POLISCI 158</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <strong>Can people tell what is real?</strong>
+              A small experiment that asks participants to tell AI-generated content apart from authentic content, then measures how accurately they can do it.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with Claude. Text by Amanda Stevens</p>
+    </footer>
+
+  </div>
+</body>
+</html>
